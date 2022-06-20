@@ -55,7 +55,7 @@ const App = () => {
 
     return (
         <div>
-            {location.pathname === '/goit-react-hw-05-movies' && <Redirect to="/" />}
+            {location.pathname === '/goit-react-hw-05-movies/' && <Redirect to="/" />}
             <header>
                 <Navigation />
             </header>
