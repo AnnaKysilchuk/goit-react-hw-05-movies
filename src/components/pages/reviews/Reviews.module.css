@@ -1,0 +1,33 @@
+.reviews {
+    margin: 0 30px 30px;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.reviewsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.reviewsAuthor {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.reviewsContent {
+    font-style: italic;
+    padding: 0 30px;
+}
+
+.reviewsDate {
+    font-size: 12px;
+    text-align: right;
+}
+
+.noReviews {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(90, 90, 90);
+}

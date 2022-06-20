@@ -1,0 +1,68 @@
+.movieDetailsPage {
+    padding: 30px;
+}
+
+.movieDetails {
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+}
+
+.movieDetailsImg {
+    margin-right: 20px;
+}
+
+.imgNotFound {
+    min-width: 500px;
+    min-height: 700px;
+    background-image: url(../../../img/imgNotFound.png);
+    background-size: cover;
+
+    margin-right: 20px;
+}
+
+.movieDetailsInfoBlock {
+    max-width: 800px;
+}
+
+.movieDetailsMovieTitle {
+    font-size: 42px;
+}
+
+.movieDetailsScore {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.movieDetailsTitle {
+    font-size: 30px;
+}
+
+.movieDetailsText {
+    font-size: 18px;
+}
+
+.movieDetailsList {
+    list-style: none;
+    padding: 0;
+    font-size: 18spx;
+}
+
+.navigationLink {
+    font-size: 24px;
+    font-weight: 700;
+    color: #414141;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigationLink:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navigationLink:hover {
+    color: #00d0d0;
+}
+
+.navigationLinkActive {
+    color: #00d0d0;
+}
