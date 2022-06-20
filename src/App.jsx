@@ -1,4 +1,4 @@
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation, Redirect } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { useState, useEffect } from 'react';
 import { ApiService } from './services/api';
@@ -29,6 +29,7 @@ const api = new ApiService();
 const App = () => {
     const [movies, setMovies] = useState([]);
     const [foundedMovies, setFoundedMovies] = useState([]);
+    const location = useLocation();
 
     useEffect(() => {
         const onFetchTrendingMovies = async () => {
@@ -53,7 +54,8 @@ const App = () => {
     };
 
     return (
-        <>
+        <div>
+            {location.pathname === '/goit-react-hw-05-movies' && <Redirect to="/" />}
             <header>
                 <Navigation />
             </header>
@@ -87,7 +89,7 @@ const App = () => {
                     </Switch>
                 </Suspense>
             </main>
-        </>
+        </div>
     );
 };
 
